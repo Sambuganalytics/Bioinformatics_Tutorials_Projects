@@ -1,0 +1,76 @@
+# ===== Raw sequencing data =====
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.sra
+
+# ===== Reference genomes and indices =====
+*.fa
+*.fasta
+*.fa.gz
+*.fasta.gz
+*.fai
+*.dict
+*.amb
+*.ann
+*.bwt
+*.pac
+*.sa
+*.2bit
+
+# ===== Alignments =====
+*.sam
+*.bam
+*.bai
+*.cram
+*.crai
+
+# ===== Variant files =====
+*.vcf
+*.vcf.gz
+*.vcf.gz.tbi
+*.bcf
+*.csi
+
+# ===== Large pipeline outputs =====
+results/
+output/
+work/
+tmp/
+.snakemake/
+.nextflow/
+.nextflow.log*
+
+# ===== Logs =====
+*.log
+
+# ===== Python =====
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ===== R =====
+.Rhistory
+.RData
+.Rproj.user/
+
+# ===== Secrets (never upload these) =====
+.env
+*.key
+*.pem
+
+# ===== OS and editor files =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ===== Exceptions: small practice files that SHOULD be uploaded =====
+# (must stay at the bottom, after the ignore rules above)
+!practice_reads.fastq
+!practice_sequence.fasta
+!raw_reads.fastq
+!single_record.fasta
